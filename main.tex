@@ -91,11 +91,12 @@ Work on: http://swcarpentry.github.io/shell-novice/ and do episodes: Introductio
 Finish Elaboration I. This is due in cloudstor only before the Week 5 class (though it will form part of your Elaboration II submission). Commit to git as you are committing all assignments, in whatever organisation you choose.''
 
 \end{frame}
+
 \begin{frame}{Assignment overview 2}
 
 Focus on the assignments to meet expectations. Do readings if possible. 
 
-Elaboration I and II are assessable. Worth 15\% of the proof of concept marks. 
+Elaboration is assessable (combined parts I & II). Worth 15\% of the proof of concept marks. 
 
 Shell Learning Journal, due as Week 6 participatory task.
 
@@ -115,6 +116,41 @@ Note: You will be testing these things for your next assignment (Elaboration II)
 This elaboration planning document is due on Cloudstor by the start of class, week 5. You will use it as part of your graded Elaboration II submission, week 6.}
 
     
+\end{frame}
+
+\begin{frame}{Elaboration I advice}
+
+Read the beginning of Chapter 7 in , through 'Elaboration and Iterations' (plus any subsequent sections where you think you need more detail).
+
+The goal of the assignment is to:
+
+\begin{itemize}[label=\textbullet]
+    \item get a more detailed understanding of requirements;
+    \item start charting ways to deliver those requirements;
+    \item mitigate risk / de-scope as necessary (fail early and often);
+    \item onfirm your earlier scoping analysis, ensuring that the tool or workflow you are developing does something you need.
+\end{itemize}
+
+The hardest part will probably be finding and choosing technologies. Doing so will likely require consultations with us. Please attend consultation hours and use Slack.
+
+\end{frame}
+
+\begin{frame}{Elaboration I examples}
+
+
+
+
+\begin{itemize}[label=\textbullet]
+    \item Social science: build a pipeline to get data from a public source (AURIN, ADA, data.gov.au, etc.) or from your own social surveys using an API and do something with that data (and then maybe resubmit the improved dataset if applicable).
+    \item Ethnography / oral history: adapt an existing metadata capture mobile application to your needs.
+    \item Textual or Media studies: build or adapt a system to manage metadata about the items in your corpus.
+    \item Textual research: develop a text analysis tool using Voyant for your corpus.
+    \item Archival research: build a pipeline around the management of your archival sources (e.g., photographs of them) using Zotero, Tropy, or other open-source tools.
+    \item Cross-disciplinary: develop a full-service, redeployable bibliography management pipeline around one of the open managers (e.g., Zotero) for your thesis; develop a redeployable TeX pipeline / template for your thesis. 
+\end{itemize}
+
+The hardest part will probably be finding and choosing technologies. Doing so will likely require consultations with us. Please attend consultation hours and use Slack.
+
 \end{frame}
 
 \section{Software Carpentry: Shell}
@@ -175,6 +211,10 @@ the machine...' \cite{Stephenson1999-fw}
         \end{figure}
 
 \end{frame}
+\begin{frame}{SWC ls and prompt}
+
+Let us look at the prompt now...
+\end{frame}
 
 \begin{frame}{Nelle's Pipeline}
 
@@ -192,196 +232,18 @@ Using GUI would take 1520 different file selections. Finishing analysis would ta
 
 As a bonus, once she has put a processing pipeline together, she will be able to use it again whenever she collects more data.
 \end{frame}
-% \begin{frame}{Assignment overview 2}
-% \begin{itemize}[label=\textbullet]
 
-% \item Learning Journal (Covered last week. Any technical work you do in this class should go into its own section). No formatting rules, though we disrecommend using word because it breaks things. (Due 4 times throughout semester)
-% \item Lighting Talks (PICO Presentations) (Presenting your Proof of Concept (Tech Demo)) in a 2 minute mixed presentation/poster format. See EGU Pico presentation. (During exam time)
-% \item Original Software Publication (Presenting your proof of concept as a paper which could be published in the SoftwareX Journal) (Due Week 13)
-% \end{itemize}
+\begin{frame}{Navigating files and directories}
 
-% % Shawn, what visible thing will we change in reaction?
-% \end{frame}
+Episode 2, Navigating Files and Directories:
 
-% \section{Jargon Busting}
-% \begin{frame}{To open with, some jargon busting}
-% Via @sheri: https://cloudstor.aarnet.edu.au/plus/f/3774955770
+How can I move around on my computer? 
 
-% Some terms of note:
+How can I see what files and directories I have? 
 
-% \begin{itemize}[label=\textbullet]
-%     \item Proof of Concept (POC): `Assignment for FOAR705. See "Scoping", "Elaboration", "Deployment" A mechanism for describing, then creating a technology (tool and/or technique) workflow to assist your research.' The major work you will be doing over this semester. 
-%     \item Typesetting: `Typesetting is the careful arrangement of text in a typeface in order to achieve maximum legibility,' \cite{Newcomb2019-hm}. The fourth step in the composition process (Preceded by Outlining (figuring out exactly what you want to say, and in what order, down to sub-paragraph detail), Writing, and Editing).
-% \end{itemize}
+How can I specify the location of a file or directory on my computer?
 
-
-% \end{frame}
-
-% \section{Data Carpentry}
-% \begin{frame}{Discussion from last week}
-
-% Discussion:
-
-% \begin{itemize}
-% \item Episode 1:
-% \begin{itemize}
-% \item What was wrong with the SAFI `messy' data?
-% \item What metadata should be recorded for the `clean' data?
-% \end{itemize}
-% \item Episode 2:
-% \begin{itemize}
-% \item What dirty data sets did you find?
-% \item What errors did you find counterintuitive?
-% \end{itemize}
-% \end{itemize}
-
-
-
-% \end{frame}
-% \begin{frame}{Dates as Data}
-
-% \begin{figure}[H]
-%         \centering
-%         \includegraphics[width=\textwidth]{figures/excel_dates_1.jpg}
-%         \caption{Actual value in cells: `41822', `41834', and `1'. Dates as data, Data Carpentry. CC-By}
-%         \label{fig:bigdates}
-%     \end{figure}
-
-% Also beware: Regional Date formatting.
-
-
-% \end{frame}
-% \begin{frame}{Exercise}
-
-% Download and open the dates.xlsx file. This file contains a subset of the data from the SAFI interviews, including the dates on which the interviews were conducted.
-
-% Choose the tab of the spreadsheet that corresponds to the way you format dates in your location (either day first {\tt DD\_MM\_YEAR }, or month first {\tt MM\_DD\_YEAR} ).
-
-% Extract the components of the date to new columns. For this we can use the built in Excel functions:
-
-% {\tt =MONTH()} 
-
-% {\tt =DAY()}
-
-% {\tt =YEAR()}
-
-% Apply each of these formulas to its entire column. Make sure the new column is formatted as a number and not as a date.
-
-% \end{frame}
-
-% \begin{frame}{Exercise}
-% Using the same spreadsheet you used for the previous exercise, add another data point in the {\tt interview\_date} column by typing either {\tt 11/17} (if your location uses {\tt MM/DD} formatting) or {\tt 17/11} (if your location uses {\tt DD/MM} formatting). The {\tt Day}, {\tt Month}, and {\tt Year} columns should populate for this new data point. What year is shown in the {\tt Year} column?
-% \end{frame}
-
-% \begin{frame}{Notes on Quality Assurance}
-
-% \begin{itemize}[label=\textbullet]
-%     \item Do one thing at a time.
-%     \item Constrain inputs as much as you can.
-%     \item Calculations should have validation/sanity checks.
-% \end{itemize}
-% \end{frame}
-
-% \section{Computational Thinking}
-
-% \begin{frame}{What is Computational Thinking?}
-
-% Computers are good at some things. Mostly boring and repetitive things. 
-
-% People are good at other things. Mostly creative and interesting things.
-
-% Computers are fast but stupid. They need clear, step-by-step instructions (which they can then execute quickly).
-
-% Computational thinking is an approach that lets you decide \textbf{what} computers are good for, and \textbf{how} to tell the computer to do what you want.
-
-% \end{frame}
-
-% \begin{frame}{Decomposition and algorithm design}
-
-% \textbf{Computational Thinking }(CT) is a problem solving process that includes a number of characteristics and dispositions. \cite{Google2019-es}
-% \begin{itemize}[label=\textbullet]
-%     \item \textbf{Decomposition}: Breaking down data, processes, or problems into smaller, manageable parts.
-%     \item \textbf{Algorithm Design}: Developing the step by step instructions for solving this and similar problems.
-% \end{itemize}
-
-% Bonus points for:
-% \begin{itemize}
-%     \item \textbf{Pattern Recognition}: Observing patterns, trends, and regularities in data.
-%     \item \textbf{Abstraction}: Identifying the general principles that generate these patterns.
-% \end{itemize}
-% \end{frame}
-
-% \begin{frame}{Computational Thinking example}
-
-% 'I need to produce properly formatted references and bibliography in my thesis'
-
-% [Articulate process in groups]
-
-% \end{frame}
-
-%  \section{Project management 101}
-
-%  \begin{frame}{Developing ideas towards a solution}
-%      So you have great ideas, what next? 
-%  \end{frame}
-
-%  \begin{frame}{Approach \#1: Top-down design (`Waterfall')}
-%   \begin{figure}[Waterfall]
-%      \centering
-%          \includegraphics[height=.75\textheight]{figures/waterfall.png}
-%          \caption{Traditional and linear approach \cite{Parody2018-if}} 
-%          \label{fig:6}
-%   \end{figure}
-%  \end{frame}
-
-%  \begin{frame}{Approach \#2: Iterative design with course corrections (`Agile')}
-%   \begin{figure}[Agile]
-%      \centering
-%          \includegraphics[height=.75\textheight]{figures/agile.png}
-%          \caption{Design-test-repeat approach to PM \cite{Parody2018-if}} 
-%          \label{fig:7}
-%   \end{figure}
-%  \end{frame}
-
-%  \begin{frame}{Manifesto for Agile Software Development}
-%  We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
-%      \begin{itemize}[label=\textbullet]
-%          \item \textbf{Individuals and interactions} over processes and tools
-%          \item \textbf{Working software} over comprehensive documentation
-%          \item \textbf{Customer collaboration} over contract negotiation
-%          \item \textbf{Responding to change} over following a plan
-%      \end{itemize}
-%  That is, while there is value in the items on the right, we value the items on the left more. \cite{Atlassian2019-xl}
-%  \end{frame}
-
-%  \begin{frame}{Tool \#1: Gantt chart}
-%   \begin{figure}[Gantt]
-%      \centering
-%          \includegraphics[height=.75\textheight]{figures/gantt.png}
-%          \caption{A Gantt Chart template (on Cloudstor)}
-%          \label{fig:8}
-%   \end{figure}
-%  \end{frame}
-
-%  \begin{frame}{Tool \#2: Kanban board}
-%   \begin{figure}[Kanban]
-%      \centering
-%          \includegraphics[height=.75\textheight]{figures/kanban.png}
-%          \caption{Schematic Kanban board \cite{Atlassian2019-bo}}
-%          \label{fig:9}
-%   \end{figure}
-%  \end{frame}
-
-%  \begin{frame}{A Kanban board should}
-%      \begin{itemize}[label=\textbullet]
-%          \item Visualise your work
-%          \item Limit work in progress
-%      \end{itemize}
-%  Kanban boards often have columns like: Backlog (wish list), To do, In progress, Done, with the 'To do' and 'In progress' columns having work limits (e.g., 3-5 tasks). 
-
-%  Trello is a popular application for Kanban. Atlassian has Kanban learning materials online \cite{Atlassian2019-bo}.
-%  \end{frame}
-
+\end{frame}
 
 \section{Minute cards!}
 \begin{frame}{Feedback time}
